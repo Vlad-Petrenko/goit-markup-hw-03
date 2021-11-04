@@ -6,7 +6,8 @@
   --background-black: #2f303a;
   --white-fill: rgba(255, 255, 255, 0.6);
   --background-button: #f5f4fa;
-  --background-portfolio-gray: #F6F6F6;
+  --background-portfolio-gray: #f6f6f6;
+  --border-gray-color: #EEEEEE;
 }
 
 body {
@@ -269,14 +270,18 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 4px;
 }
 .filter .portfolio .paragraph {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
 }
+.portfolio .text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-gray-color);
+  border-bottom: 1px solid var(--border-gray-color);
+  border-right: 1px solid var(--border-gray-color);
+}
 
-/* .item{
-  border-left: 1px solid var(--title-text-color);
-  border-bottom: 1px solid var(--title-text-color);
-  border-right: 1px solid var(--title-text-color);
-} */
