@@ -7,7 +7,7 @@
   --white-fill: rgba(255, 255, 255, 0.6);
   --background-button: #f5f4fa;
   --background-portfolio-gray: #f6f6f6;
-  --border-gray-color: #EEEEEE;
+  --border-gray-color: #eeeeee;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
   padding-bottom: 94px;
 }
 
-/* Site nav */
+/* ------------------Header --------------------*/
 .header-page {
   display: flex;
   align-items: center;
@@ -57,8 +57,13 @@ body {
 .logo-first {
   color: var(--accent-color);
 }
+.site-nav {
+  padding: 0;
+}
 .site-nav .item {
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .item:last-child {
@@ -98,7 +103,7 @@ body {
   margin-right: 0;
 }
 
-/* Hero */
+/* -------------------------Hero-------------- */
 .hero {
   text-align: center;
 }
@@ -107,7 +112,7 @@ body {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -128,7 +133,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-/* Feature */
+/*-------------------Feature--------------------------- */
 .feature-list {
   display: flex;
 }
@@ -151,13 +156,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.third-section .list {
+
+/* ----------------Work------------------------ */
+.work-section .list {
   display: flex;
 }
-.third-section .item {
+.work-section .item {
   margin-right: 30px;
 }
-.third-section .item:last-child {
+.work-section .item:last-child {
   margin-right: 0;
 }
 
@@ -168,21 +175,22 @@ body {
   text-align: center;
 }
 /* Team */
-.fourth-section {
+.our-team-section {
   background-color: var(--background-button);
 }
-.fourth-section .list {
+.our-team-section .list {
   display: flex;
 }
 
-.fourth-section .item {
+.our-team-section .item {
   margin-right: 30px;
   background-color: #fff;
 }
 
-.fourth-section .item:last-child {
+.our-team-section .item:last-child {
   margin-right: 0;
 }
+
 .our-team .name {
   color: var(--title-text-color);
   font-weight: 500;
@@ -190,12 +198,14 @@ body {
   line-height: 1.2;
   text-align: center;
 }
+
 .our-team .paragraph {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
-/* Footer */
+/* ------------------Footer------------------------- */
+
 .footer {
   background-color: var(--background-black);
 }
@@ -217,11 +227,8 @@ body {
 .logo-footer {
   color: var(--white-color);
 }
-/* Porfolio */
 
-.filter {
-  background-color: var(--background-portfolio-gray);
-}
+/* --------------Porfolio-------------------- */
 
 .filter-button .button {
   border-radius: 4px;
@@ -284,4 +291,3 @@ body {
   border-bottom: 1px solid var(--border-gray-color);
   border-right: 1px solid var(--border-gray-color);
 }
-
