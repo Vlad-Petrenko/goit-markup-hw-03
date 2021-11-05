@@ -156,6 +156,7 @@ body {
 .hero .button {
   display: inline-block;
   border-radius: 4px;
+  border: transparent;
   padding: 10px 32px;
   font-family: Roboto;
   cursor: pointer;
