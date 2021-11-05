@@ -29,6 +29,7 @@ body {
 .list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .section {
@@ -36,17 +37,44 @@ body {
   padding-bottom: 94px;
 }
 
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ------------------Header --------------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-page {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
+
 .site-nav-list {
   display: flex;
 }
 .logo {
-  margin-right: 92px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -90,6 +118,8 @@ body {
   margin-left: auto;
 }
 .auth-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 50px;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -106,9 +136,13 @@ body {
 /* -------------------------Hero-------------- */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-black);
 }
 
 .hero-title {
+  margin: 0 0 30px 0;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -147,12 +181,15 @@ body {
 }
 
 .feature-list .title {
+  margin: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
 }
 .feature-list .paragraph {
+  margin: 0;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -168,12 +205,6 @@ body {
   margin-right: 0;
 }
 
-.section-title {
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
 /* Team */
 .our-team-section {
   background-color: var(--background-button);
@@ -191,7 +222,13 @@ body {
   margin-right: 0;
 }
 
+.our-team-text {
+  margin: 30px 0;
+}
+
 .our-team .name {
+  margin: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -200,6 +237,7 @@ body {
 }
 
 .our-team .paragraph {
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -208,23 +246,30 @@ body {
 
 .footer {
   background-color: var(--background-black);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   font-size: 14px;
   line-height: 1.71;
 }
 .address .street {
+  margin: 0;
+  margin-top: 20px;
   color: var(--white-color);
   font-style: normal;
 }
 
 .address .link {
+  margin-top: 9px;
   display: flex;
   color: var(--white-fill);
   text-decoration: none;
   font-style: normal;
 }
 .logo-footer {
+  padding: 0;
+  margin: 0;
   color: var(--white-color);
 }
 
@@ -232,7 +277,7 @@ body {
 
 .filter-button .button {
   border-radius: 4px;
-  border: none;
+  border: transparent;
   padding: 6px 22px;
 
   font-family: Roboto;
@@ -257,6 +302,7 @@ body {
 }
 
 .filter-button {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
