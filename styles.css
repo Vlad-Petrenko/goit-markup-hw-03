@@ -107,6 +107,9 @@ body {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
